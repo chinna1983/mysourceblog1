@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" />Mysourceblog.com</title>
+    <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="../../Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+               <object type="application/x-shockwave-flash" data="../../Videos/player.swf" width="393" height="200">
+                <param name="movie" value="../../Videos/player.swf" />
+                <param name="allowFullScreen" value="true" />
+                <param name="FlashVars" value="flv=http://www.mysourceblog.com/videos/logo.flv&amp;width=393&amp;height=200&amp;loop=1&amp;autoplay=1&amp;autoload=1" />
+    
+            </object>
+            </div>
+              
+            <div id="logindisplay">
+             
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div> 
+            
+            <div id="menucontainer">
+            
+                <ul id="menu">              
+                    <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
+                    <li><%: Html.ActionLink("What's New", "List", "Home")%></li>
+                    <li><%: Html.ActionLink("Components", "Tools", "Home")%></li>
+                    <li><%: Html.ActionLink("Foram", "Foram", "Home")%></li>
+                    <li><%: Html.ActionLink("Contact", "Contact", "Home")%></li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+            
+            
+            
+            <div id="footer">
+            
+            <div id="Fmenucontainer">
+            
+            <ul id="Fmenu">
+            <li><%: Html.ActionLink("Contact", "Contact", "Home")%></li>
+            <li><%: Html.ActionLink("Privacy policy", "Privacy", "Home")%></li>
+            <li><%: Html.ActionLink("Components", "Tools", "Home")%></li>
+            <li><%: Html.ActionLink("Foram and Alerts", "Foram", "Home")%></li>
+            <li><%: Html.ActionLink("ChangePassword", "ChangePassword", "Account")%></li>
+            
+          
+            <li style="font-size:x-large;"><b>MYSOURCEBLOG</b></li>
+            </ul>
+            <ul><li><b>Copyright ©2012 <a href="http://www.mysourceblog.com" target="_blank">Mysourceblog.com</a>, Inc. All Rights Reserved.</b></li></ul>
+            </div>
+            </div>
+ </div>
+
+ </div>
+</body>
+</html>

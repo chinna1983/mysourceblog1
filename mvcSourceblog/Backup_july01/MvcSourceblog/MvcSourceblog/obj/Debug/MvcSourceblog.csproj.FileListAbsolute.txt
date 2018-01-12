@@ -1,0 +1,7 @@
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\bin\MvcSourceblog.dll
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\bin\MvcSourceblog.pdb
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\obj\Debug\ResolveAssemblyReference.cache
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\obj\Debug\MvcSourceblog.dll
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\obj\Debug\MvcSourceblog.pdb
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\bin\AntiXSSLibrary.dll
+D:\Krishna\mvcSourceblog\MvcSourceblog\MvcSourceblog\bin\AntiXSSLibrary.xml
